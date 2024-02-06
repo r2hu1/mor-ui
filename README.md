@@ -1,6 +1,6 @@
 ## Mor-Ui
 
-A !UI Library built with Nextjs, Tailwindcss.
+A !ui Library built with Nextjs, Tailwindcss.
 
 ## Avilable Blocks
 
