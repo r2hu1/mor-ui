@@ -16,12 +16,12 @@ export default function Page() {
                 </div>
             </div>
 
-            <div className="mb-4 flex justify-between items-center mt-10">
+            <div id="button" className="group mb-4 flex justify-between items-center mt-10">
                 <div>
                     <h1 className="text-2xl font-bold -mb-1">Button</h1>
                     <p className="text-xs">Button and their variants.</p>
                 </div>
-                <Link href="/"><Hash className="w-[1.2rem] h-[1.2rem]" /></Link>
+                <Link className="hidden group-hover:block" href="#button"><Hash className="w-[1.2rem] h-[1.2rem]" /></Link>
             </div>
             <div className="relative h-[300px] max-w-2xl mx-auto flex border border-secondary items-center justify-center p-4 w-full bg-background rounded-lg">
                 <div className="flex items-center justify-between w-full absolute top-0 right-0 p-2 px-3 border-b border-secondary">
@@ -43,12 +43,12 @@ export default function Page() {
                 </div>
             </div>
 
-            <div className="mb-4 flex justify-between items-center mt-10">
+            <div id="button-w/icons" className="group mb-4 flex justify-between items-center mt-10">
                 <div>
                     <h1 className="text-2xl font-bold -mb-1">Button w/Icons</h1>
                     <p className="text-xs">Button w/Icons and their variants.</p>
                 </div>
-                <Link href="/"><Hash className="w-[1.2rem] h-[1.2rem]" /></Link>
+                <Link className="hidden group-hover:block" href="#button-w/icons"><Hash className="w-[1.2rem] h-[1.2rem]" /></Link>
             </div>
             <div className="relative h-[300px] max-w-2xl mx-auto flex border border-secondary items-center justify-center p-4 w-full bg-background rounded-lg">
                 <div className="flex items-center justify-between w-full absolute top-0 right-0 p-2 px-3 border-b border-secondary">
@@ -70,12 +70,12 @@ export default function Page() {
                 </div>
             </div>
 
-            <div className="mb-4 flex justify-between items-center mt-10">
+            <div id="tooltip" className="group mb-4 flex justify-between items-center mt-10">
                 <div>
                     <h1 className="text-2xl font-bold -mb-1">Tooltip</h1>
                     <p className="text-xs">Tooltip and their variants.</p>
                 </div>
-                <Link href="/"><Hash className="w-[1.2rem] h-[1.2rem]" /></Link>
+                <Link className="hidden group-hover:block" href="#tooltip"><Hash className="w-[1.2rem] h-[1.2rem]" /></Link>
             </div>
             <div className="relative h-[300px] max-w-2xl mx-auto flex border border-secondary items-center justify-center p-4 w-full bg-background rounded-lg">
                 <div className="flex items-center justify-between w-full absolute top-0 right-0 p-2 px-3 border-b border-secondary">
@@ -96,12 +96,12 @@ export default function Page() {
                 </div>
             </div>
 
-            <div className="mb-4 flex justify-between items-center mt-10">
+            <div id="dialog" className="group mb-4 flex justify-between items-center mt-10">
                 <div>
                     <h1 className="text-2xl font-bold -mb-1">Diaog/Modal</h1>
                     <p className="text-xs">Diaog/Modal and their variants.</p>
                 </div>
-                <Link href="/"><Hash className="w-[1.2rem] h-[1.2rem]" /></Link>
+                <Link className="hidden group-hover:block" href="#dialog"><Hash className="w-[1.2rem] h-[1.2rem]" /></Link>
             </div>
             <div className="relative h-[300px] max-w-2xl mx-auto flex border border-secondary items-center justify-center p-4 w-full bg-background rounded-lg">
                 <div className="flex items-center justify-between w-full absolute top-0 right-0 p-2 px-3 border-b border-secondary">
