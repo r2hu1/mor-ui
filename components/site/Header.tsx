@@ -10,7 +10,7 @@ import Logo from "./Logo";
 export default function Header() {
     const { setTheme, resolvedTheme } = useTheme();
     return (
-        <header className="border-b border-border/80 gap-2 flex items-center justify-between py-3 px-5 md:px-20 lg:px-32">
+        <header className="border-b border-border/80 gap-3 flex items-center justify-between py-3 px-5 md:px-20 lg:px-32">
             <Logo />
             <div className="flex items-center gap-2">
                 <Input type="text" placeholder="Search..." />

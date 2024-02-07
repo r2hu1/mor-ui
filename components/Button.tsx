@@ -33,7 +33,7 @@ export default function Button({
         <>
             <button {...props} className={cn(stylB,variants[variant], isBorder, isIcon, className, asLink && "hidden")}>{children}</button>
             {asLink && (
-                <Link {...props} href={href}><button className={cn(variants[variant], isBorder, isIcon, className)}>{children}</button></Link>
+                <Link {...props} href={href} className={cn(stylB,variants[variant], isBorder, isIcon, className)}>{children}</Link>
             )}
         </>
     )
