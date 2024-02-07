@@ -8,9 +8,17 @@ import { ThemeProvider } from "@/components/site/theme-provider";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Mor-UI",
-  description: "A handmade UI kit for your next project.",
+  title: "MorUI",
+  description: ">Fully customizeable, reuseable components for your next project.",
 };
+
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 1,
+  userScalable: false,
+  themeColor: "#09090b",
+}
 
 export default function RootLayout({
   children,

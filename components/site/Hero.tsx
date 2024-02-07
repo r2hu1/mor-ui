@@ -1,3 +1,4 @@
+import { IoMdArrowDown } from "react-icons/io";
 import Button from "../Button";
 import Tooltip from "../Tooltip";
 
@@ -11,7 +12,7 @@ export default function Hero() {
                     <Button className="mt-5">Components</Button>
                 </Tooltip>
                 <Tooltip content="Documentation">
-                    <Button className="mt-5" variant="secondary">Docs</Button>
+                    <Button className="mt-5" variant="secondary" icon><IoMdArrowDown className="w-4 h-4" /></Button>
                 </Tooltip>
             </div>
             <div className="relative h-[300px] max-w-2xl mx-auto flex flex-wrap border border-secondary items-center justify-center gap-2 p-4 w-full bg-secondary/60 mt-20 rounded-lg">
