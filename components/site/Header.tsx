@@ -86,7 +86,7 @@ export default function Header() {
                     </div>
                 </div>
                 <Tooltip content="GitHub">
-                    <Button variant="primary" asLink href="https://github.com/r2hu1" icon><FaGithub className="w-[1.2rem] h-[1.2rem]" /></Button>
+                    <Button variant="primary" asLink href="https://github.com/r2hu1/mor-ui" icon><FaGithub className="w-[1.2rem] h-[1.2rem]" /></Button>
                 </Tooltip>
                 <Tooltip content={resolvedTheme === "dark" ? "Light" : "Dark"}>
                     <Button variant="secondary" icon onClick={() => setTheme(resolvedTheme === "dark" ? "light" : "dark")}>
