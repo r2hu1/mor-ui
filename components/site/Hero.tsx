@@ -14,7 +14,7 @@ export default function Hero() {
                     <Button className="mt-5" variant="secondary">Docs</Button>
                 </Tooltip>
             </div>
-            <div className="relative h-[300px] max-w-2xl mx-auto flex flex-wrap border border-secondary items-center justify-center gap-2 p-4 w-full bg-secondary/60 mt-20 rounded-lg">
+            <div className="relative h-[300px] max-w-2xl mx-auto flex border border-secondary items-center justify-center p-4 w-full bg-secondary/60 mt-20 rounded-lg">
                 <div className="flex items-center justify-between w-full absolute top-0 right-0 p-2 px-3 border-b border-secondary">
                     <span className="text-xs">Button.jsx</span>
                     <div className="flex gap-2 items-center">
@@ -26,10 +26,12 @@ export default function Hero() {
                         </Tooltip>
                     </div>
                 </div>
-                <Button>Primary</Button>
-                <Button variant="secondary">Secondary</Button>
-                <Button variant="outline">Outline</Button>
-                <Button variant="ghost">Ghost</Button>
+                <div className="flex flex-wrap gap-2">
+                    <Button>Primary</Button>
+                    <Button variant="secondary">Secondary</Button>
+                    <Button variant="outline">Outline</Button>
+                    <Button variant="ghost">Ghost</Button>
+                </div>
             </div>
         </div>
     )
