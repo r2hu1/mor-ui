@@ -64,13 +64,12 @@ export default function Header() {
                     <div className="bg-background w-full border border-secondary rounded-xl p-4 max-w-lg relative">
                         <h1 className="text-base font-bold mt-2 mb-2">All Components</h1>
                         <div>
-                            {/* <Input onChange={handleSearch} className="w-full" placeholder="Component name.." type="text" /> */}
                             <X className="w-[1rem] h-[1rem] absolute top-3 right-3 opacity-95" onClick={toggle} />
                         </div>
                         <div className="mt-4">
                             <ul className="grid gap-2">
                                 {componentsLink.map((link) => (
-                                    <Link href={link.href} key={link.name}>
+                                    <Link onClick={() => setIsOpen(false)} href={link.href} key={link.name}>
                                         <li className="bg-secondary/40 py-2 rounded-xl px-4 hover:bg-secondary/60 transition border border-secondary">
                                             <h1 className="text-sm">{link.name}</h1>
                                             <p className="text-xs font-light">{link.description}</p>
