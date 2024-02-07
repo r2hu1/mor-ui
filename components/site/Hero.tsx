@@ -14,7 +14,7 @@ export default function Hero() {
                     <Button className="mt-5" variant="secondary">Docs</Button>
                 </Tooltip>
             </div>
-            <div className="relative h-[300px] flex border border-secondary items-center justify-center gap-2 p-4 w-full bg-secondary/70 mt-16 rounded-lg">
+            <div className="relative h-[300px] max-w-2xl mx-auto flex border border-secondary items-center justify-center gap-2 p-4 w-full bg-secondary/70 mt-16 rounded-lg">
                 <div className="flex gap-2 absolute top-2 right-2">
                     <Tooltip content="Live preview">
                         <Button className="text-xs h-6">preview</Button>
