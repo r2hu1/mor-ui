@@ -12,7 +12,7 @@ export default function Header() {
     return (
         <header className="border-b border-border/80 gap-3 flex items-center justify-between py-3 px-5 md:px-20 lg:px-32">
             <Logo />
-            <div className="flex items-center gap-2">
+            <div className="flex items-center gap-2 w-full sm:w-auto">
                 <Input type="text" placeholder="Search..." />
                 <Tooltip content="GitHub">
                     <Button variant="primary" asLink href="https://github.com/r2hu1" icon><FaGithub className="w-[1.2rem] h-[1.2rem]" /></Button>

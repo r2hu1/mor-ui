@@ -14,7 +14,7 @@ export default function Hero() {
                     <Button className="mt-5" variant="secondary">Docs</Button>
                 </Tooltip>
             </div>
-            <div className="relative h-[300px] max-w-2xl mx-auto flex flex-wrap border border-secondary items-center justify-center gap-2 p-4 w-full bg-secondary/60 mt-16 rounded-lg">
+            <div className="relative h-[300px] max-w-2xl mx-auto flex flex-wrap border border-secondary items-center justify-center gap-2 p-4 w-full bg-secondary/60 mt-20 rounded-lg">
                 <div className="flex items-center justify-between w-full absolute top-0 right-0 p-2 px-3 border-b border-secondary">
                     <span className="text-xs">Button.jsx</span>
                     <div className="flex gap-2 items-center">
