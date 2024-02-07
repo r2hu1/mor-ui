@@ -10,7 +10,7 @@ export default function Dialog() {
 
     return (
         <>
-            <Button onClick={toggle} className="w-fit">Dialog</Button>
+            <Button onClick={toggle} className="w-fit">Click Me</Button>
             <div className={cn("fixed flex items-center justify-center px-5 inset-0 z-50 bg-black/80 transition", isOpen ? "opacity-100 visible transition" : "transition opacity-0 invisible")}>
                 <div className="bg-background border border-secondary rounded-xl p-4 max-w-lg relative">
                     <div className="flex items-center justify-center font-bold">

@@ -8,13 +8,13 @@ export default function Hero() {
             <p className="md:text-base text-sm mt-2 mx-auto max-w-xs md:max-w-md">Fully customizeable, reuseable components for your next project.</p>
             <div className="flex items-center gap-2 justify-center">
                 <Tooltip content="Sites Built Using MorUI">
-                    <Button className="mt-5">Components</Button>
+                    <Button className="mt-5" asLink href="/components">Components</Button>
                 </Tooltip>
                 <Tooltip content="Documentation">
-                    <Button className="mt-5" variant="secondary">Docs</Button>
+                    <Button className="mt-5" variant="secondary" asLink href="/components">Docs</Button>
                 </Tooltip>
             </div>
-            <div className="relative h-[300px] max-w-2xl mx-auto flex border border-secondary items-center justify-center p-4 w-full bg-secondary/60 mt-20 rounded-lg">
+            <div className="relative h-[300px] max-w-2xl mx-auto flex border border-secondary items-center justify-center p-4 w-full bg-background mt-20 rounded-lg">
                 <div className="flex items-center justify-between w-full absolute top-0 right-0 p-2 px-3 border-b border-secondary">
                     <span className="text-xs">Button.jsx</span>
                     <div className="flex gap-2 items-center">
