@@ -7,7 +7,7 @@ export default function Hero() {
             <h1 className="text-3xl md:text-4xl font-bold">Reuseable set of UI components</h1>
             <p className="md:text-base text-sm mt-2 mx-auto max-w-xs md:max-w-md">Fully customizeable, reuseable components for your next project.</p>
             <div className="flex items-center gap-2 justify-center">
-                <Tooltip content="Sites Built Using MorUI">
+                <Tooltip content="Components">
                     <Button className="mt-5" asLink href="/components">Components</Button>
                 </Tooltip>
                 <Tooltip content="Documentation">
