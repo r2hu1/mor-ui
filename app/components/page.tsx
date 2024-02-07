@@ -36,7 +36,7 @@ export default function Page() {
                         </Tooltip>
                     </div>
                 </div>
-                <div className="flex flex-wrap gap-2">
+                <div className="flex items-center justify-center flex-wrap gap-2">
                     <Button>Primary</Button>
                     <Button variant="secondary">Secondary</Button>
                     <Button variant="outline">Outline</Button>
