@@ -26,7 +26,7 @@ export default function Hero() {
                         </Tooltip>
                     </div>
                 </div>
-                <div className="flex flex-wrap gap-2">
+                <div className="flex flex-wrap items-center justify-center gap-2">
                     <Button>Primary</Button>
                     <Button variant="secondary">Secondary</Button>
                     <Button variant="outline">Outline</Button>
