@@ -11,7 +11,7 @@ export default function Hero() {
                 <Tooltip content="Sites Built Using MorUI">
                     <Button className="mt-5">Components</Button>
                 </Tooltip>
-                <Tooltip content="Documentation">
+                <Tooltip content="Scroll">
                     <Button className="mt-5" variant="secondary" icon><IoMdArrowDown className="w-4 h-4" /></Button>
                 </Tooltip>
             </div>
