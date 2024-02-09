@@ -10,6 +10,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "MorUI",
   description: "Fully customizeable, reuseable components for your next project.",
+  icons: ["/logo.png"],
 };
 
 export const viewport = {
