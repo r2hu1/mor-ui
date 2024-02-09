@@ -13,7 +13,7 @@ export default function Page() {
             <div className="grid gap-2">
                 <div className="text-xs font-normal flex items-center gap-1 opacity-70">
                     <Link href="/">home</Link>
-                    <ChevronRight className="w-[1rem] h-[1rem]" />
+                    <ChevronRight className="w-[1rem] h-[1rem] opacity-70" />
                     <Link href="/components">components</Link>
                 </div>
                 <div>
