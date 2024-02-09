@@ -14,6 +14,12 @@ export default function Header() {
     const { setTheme, resolvedTheme } = useTheme();
     const [isOpen, setIsOpen] = useState(false);
     const toggle = () => setIsOpen(!isOpen);
+    if (isOpen) {
+        document.body.classList.add("overflow-hidden");
+    }
+    else {
+        document.body.classList.remove("overflow-hidden");
+    }
 
     const componentsLink = [
         {
@@ -53,47 +59,49 @@ export default function Header() {
         }
     };
     return (
-        <header className="sticky top-0 z-30 border-b dark:border-border/80 border-border gap-3 flex items-center justify-between py-3 px-5 md:px-20 lg:px-32 backdrop-blur-3xl">
-            <Logo />
-            <div className="flex items-center gap-2">
-                <div className="relative">
-                    <Input placeholder="Search.." type="text" disabled />
-                    <div className="absolute inset-0 h-full w-full rounded-xl bg-transparent" onClick={toggle}></div>
+        <>
+            <header className="sticky top-0 z-30 border-b dark:border-border/80 border-border gap-3 flex items-center justify-between py-3 px-5 md:px-20 lg:px-32 backdrop-blur-3xl">
+                <Logo />
+                <div className="flex items-center gap-2">
+                    <div className="relative">
+                        <Input placeholder="Search.." type="text" disabled />
+                        <div className="absolute inset-0 h-full w-full rounded-xl bg-transparent" onClick={toggle}></div>
+                    </div>
+                    <Tooltip content="GitHub">
+                        <Button variant="primary" asLink href="https://github.com/r2hu1/mor-ui" icon><FaGithub className="w-[1.2rem] h-[1.2rem]" /></Button>
+                    </Tooltip>
+                    <Tooltip content={resolvedTheme === "dark" ? "Light" : "Dark"}>
+                        <Button variant="secondary" icon onClick={() => setTheme(resolvedTheme === "dark" ? "light" : "dark")}>
+                            {resolvedTheme === "dark" ? <MoonStar className="w-[1.2rem] h-[1.2rem]" /> : <SunMedium className="w-[1.2rem] h-[1.2rem]" />}
+                        </Button>
+                    </Tooltip>
                 </div>
-                <div className={cn("fixed flex items-center justify-center px-5 inset-0 z-50 bg-black/80 transition", isOpen ? "opacity-100 visible transition" : "transition opacity-0 invisible")}>
-                    <div className="bg-background w-full border border-secondary rounded-xl p-4 max-w-lg relative">
-                        <h1 className="text-base font-bold mt-2 mb-2">All Components</h1>
-                        <div>
-                            <X className="w-[1rem] h-[1rem] absolute top-3 right-3 opacity-95" onClick={toggle} />
-                        </div>
-                        <div className="mt-4">
-                            <ul className="grid gap-2">
-                                {componentsLink.map((link) => (
-                                    <Link onClick={() => setIsOpen(false)} href={link.href} key={link.name}>
-                                        <li className="bg-secondary/40 py-2 rounded-xl px-4 hover:bg-secondary/60 transition border border-secondary">
-                                            <h1 className="text-sm">{link.name}</h1>
-                                            <p className="text-xs font-light">{link.description}</p>
-                                        </li>
-                                    </Link>
-                                ))}
-                            </ul>
-                        </div>
-                        <div className="mt-4">
-                            <div className="w-full">
-                                <Button className="w-full" variant="outline" onClick={toggle}>Close</Button>
-                            </div>
+            </header>
+            <div className={cn("fixed flex items-center justify-center px-5 inset-0 z-50 bg-black/80 transition", isOpen ? "opacity-100 visible transition" : "transition opacity-0 invisible")}>
+                <div className="bg-background w-full border border-secondary rounded-xl p-4 max-w-lg relative">
+                    <h1 className="text-base font-bold mt-2 mb-2">All Components</h1>
+                    <div>
+                        <X className="w-[1rem] h-[1rem] absolute top-3 right-3 opacity-95" onClick={toggle} />
+                    </div>
+                    <div className="mt-4">
+                        <ul className="grid gap-2">
+                            {componentsLink.map((link) => (
+                                <Link onClick={() => setIsOpen(false)} href={link.href} key={link.name}>
+                                    <li className="bg-secondary/40 py-2 rounded-xl px-4 hover:bg-secondary/60 transition border border-secondary">
+                                        <h1 className="text-sm">{link.name}</h1>
+                                        <p className="text-xs font-light">{link.description}</p>
+                                    </li>
+                                </Link>
+                            ))}
+                        </ul>
+                    </div>
+                    <div className="mt-4">
+                        <div className="w-full">
+                            <Button className="w-full" variant="outline" onClick={toggle}>Close</Button>
                         </div>
                     </div>
                 </div>
-                <Tooltip content="GitHub">
-                    <Button variant="primary" asLink href="https://github.com/r2hu1/mor-ui" icon><FaGithub className="w-[1.2rem] h-[1.2rem]" /></Button>
-                </Tooltip>
-                <Tooltip content={resolvedTheme === "dark" ? "Light" : "Dark"}>
-                    <Button variant="secondary" icon onClick={() => setTheme(resolvedTheme === "dark" ? "light" : "dark")}>
-                        {resolvedTheme === "dark" ? <MoonStar className="w-[1.2rem] h-[1.2rem]" /> : <SunMedium className="w-[1.2rem] h-[1.2rem]" />}
-                    </Button>
-                </Tooltip>
             </div>
-        </header>
+        </>
     )
 }

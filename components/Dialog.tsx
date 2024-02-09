@@ -7,6 +7,12 @@ import { cn } from "@/lib/utils";
 export default function Dialog() {
     const [isOpen, setIsOpen] = useState(false);
     const toggle = () => setIsOpen(!isOpen);
+    if (isOpen) {
+        document.body.classList.add("overflow-hidden");
+    }
+    else {
+        document.body.classList.remove("overflow-hidden");
+    }
 
     return (
         <>
