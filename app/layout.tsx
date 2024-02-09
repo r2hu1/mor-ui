@@ -9,7 +9,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "MorUI",
-  description: ">Fully customizeable, reuseable components for your next project.",
+  description: "Fully customizeable, reuseable components for your next project.",
 };
 
 export const viewport = {
@@ -30,8 +30,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <ThemeProvider
           attribute="class"
-          defaultTheme="system"
-          enableSystem
+          defaultTheme="dark"
           disableTransitionOnChange={true}
         >
           <Header />
