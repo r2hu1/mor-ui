@@ -53,7 +53,7 @@ export default function Header() {
         }
     };
     return (
-        <header className="border-b border-border/80 gap-3 flex items-center justify-between py-3 px-5 md:px-20 lg:px-32">
+        <header className="sticky top-0 z-30 border-b dark:border-border/80 border-border gap-3 flex items-center justify-between py-3 px-5 md:px-20 lg:px-32 backdrop-blur-3xl">
             <Logo />
             <div className="flex items-center gap-2">
                 <div className="relative">
@@ -80,7 +80,7 @@ export default function Header() {
                         </div>
                         <div className="mt-4">
                             <div className="w-full">
-                                <Button className="w-full" onClick={toggle}>Close</Button>
+                                <Button className="w-full" variant="outline" onClick={toggle}>Close</Button>
                             </div>
                         </div>
                     </div>
