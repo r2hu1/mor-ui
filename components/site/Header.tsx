@@ -75,7 +75,7 @@ export default function Header() {
                     <Tooltip content="GitHub">
                         <Button variant="primary" asLink href="https://github.com/r2hu1/mor-ui" icon><FaGithub className="w-[1.2rem] h-[1.2rem]" /></Button>
                     </Tooltip>
-                    <Tooltip content={resolvedTheme === "dark" ? "Light" : "Dark"}>
+                    <Tooltip content={resolvedTheme && resolvedTheme.slice(0, 1).toUpperCase() + resolvedTheme.slice(1)}>
                         <Button variant="secondary" icon onClick={() => setTheme(resolvedTheme === "dark" ? "light" : "dark")}>
                             {resolvedTheme === "dark" ? <MoonStar className="w-[1.2rem] h-[1.2rem]" /> : <SunMedium className="w-[1.2rem] h-[1.2rem]" />}
                         </Button>
