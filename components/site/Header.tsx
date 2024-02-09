@@ -68,7 +68,7 @@ export default function Header() {
             <header className="sticky top-0 z-30 border-b dark:border-border/80 border-border gap-3 flex items-center justify-between py-3 px-5 md:px-20 lg:px-32 backdrop-blur-3xl">
                 <Logo />
                 <div className="flex items-center gap-2">
-                    <div className="relative">
+                    <div className="relative cursor-text">
                         <Input placeholder="Search.." type="text" disabled />
                         <div className="absolute inset-0 h-full w-full rounded-xl bg-transparent" onClick={toggle}></div>
                     </div>
