@@ -18,7 +18,12 @@ export default function Header() {
         document.body.classList.add("overflow-hidden");
     }
     else {
-        document.body.classList.remove("overflow-hidden");
+        try {
+            document.body.classList.remove("overflow-hidden");
+        }
+        catch (err) {
+            // console.log(err);
+        }
     }
 
     const componentsLink = [
