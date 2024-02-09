@@ -2,19 +2,25 @@ import Button from "@/components/Button";
 import Dialog from "@/components/Dialog";
 import Input from "@/components/Input";
 import Tooltip from "@/components/Tooltip";
-import { Hash } from "lucide-react";
+import ShareButtons from "@/components/site/ShareButtons";
+import { ChevronRight, Hash } from "lucide-react";
 import Link from "next/link";
+
 
 export default function Page() {
     return (
         <div className="py-10 mt-3 px-5 max-w-2xl mx-auto">
-            <div className="flex items-center justify-between">
-                <h1 className="text-base font-medium">All Components</h1>
-                <div className="text-xs flex gap-2">
+            <div className="grid gap-2">
+                <div className="text-xs font-normal flex items-center gap-1 opacity-70">
                     <Link href="/">home</Link>
-                    <span>/</span>
+                    <ChevronRight className="w-[1rem] h-[1rem]" />
                     <Link href="/components">components</Link>
                 </div>
+                <div>
+                    <h1 className="text-xl font-bold">All Components</h1>
+                    <p className="text-sm font-normal -mt-1 opacity-80">All components with demo and source code.</p>
+                </div>
+                <ShareButtons />
             </div>
 
             <div id="button" className="group mb-4 flex justify-between items-center mt-10">
@@ -22,10 +28,10 @@ export default function Page() {
                     <h1 className="text-xl font-bold -mb-1">Button</h1>
                     <p className="text-xs">Button and their variants.</p>
                 </div>
-                <Link className="hidden group-hover:block" href="#button"><Hash className="w-[1.2rem] h-[1.2rem]" /></Link>
+                <Link className="hidden group-hover:block" href="#button"><Hash className="w-[1rem] h-[1rem]" /></Link>
             </div>
-            <div className="relative h-[300px] max-w-2xl mx-auto flex border border-secondary items-center justify-center p-4 w-full bg-background rounded-lg">
-                <div className="flex items-center justify-between w-full absolute top-0 right-0 p-2 px-3 border-b border-secondary">
+            <div className="relative h-[300px] max-w-2xl mx-auto flex border dark:border-secondary border-border items-center justify-center p-4 w-full bg-background rounded-lg">
+                <div className="flex items-center justify-between w-full absolute top-0 right-0 p-2 px-3 border-b dark:border-secondary border-border">
                     <span className="text-xs">Button.jsx</span>
                     <div className="flex gap-2 items-center">
                         <Tooltip content="Live preview">
@@ -49,10 +55,10 @@ export default function Page() {
                     <h1 className="text-xl font-bold -mb-1">Button w/Icons</h1>
                     <p className="text-xs">Button w/Icons and their variants.</p>
                 </div>
-                <Link className="hidden group-hover:block" href="#button-w/icons"><Hash className="w-[1.2rem] h-[1.2rem]" /></Link>
+                <Link className="hidden group-hover:block" href="#button-w/icons"><Hash className="w-[1rem] h-[1rem]" /></Link>
             </div>
-            <div className="relative h-[300px] max-w-2xl mx-auto flex border border-secondary items-center justify-center p-4 w-full bg-background rounded-lg">
-                <div className="flex items-center justify-between w-full absolute top-0 right-0 p-2 px-3 border-b border-secondary">
+            <div className="relative h-[300px] max-w-2xl mx-auto flex border dark:border-secondary border-border items-center justify-center p-4 w-full bg-background rounded-lg">
+                <div className="flex items-center justify-between w-full absolute top-0 right-0 p-2 px-3 border-b dark:border-secondary border-border">
                     <span className="text-xs">Button.jsx</span>
                     <div className="flex gap-2 items-center">
                         <Tooltip content="Live preview">
@@ -64,10 +70,10 @@ export default function Page() {
                     </div>
                 </div>
                 <div className="flex flex-wrap gap-2">
-                    <Button icon><Hash className="w-[1.2rem] h-[1.2rem]" /></Button>
-                    <Button icon variant="secondary"><Hash className="w-[1.2rem] h-[1.2rem]" /></Button>
-                    <Button icon variant="outline"><Hash className="w-[1.2rem] h-[1.2rem]" /></Button>
-                    <Button icon variant="ghost"><Hash className="w-[1.2rem] h-[1.2rem]" /></Button>
+                    <Button icon><Hash className="w-[1rem] h-[1rem]" /></Button>
+                    <Button icon variant="secondary"><Hash className="w-[1rem] h-[1rem]" /></Button>
+                    <Button icon variant="outline"><Hash className="w-[1rem] h-[1rem]" /></Button>
+                    <Button icon variant="ghost"><Hash className="w-[1rem] h-[1rem]" /></Button>
                 </div>
             </div>
 
@@ -76,10 +82,10 @@ export default function Page() {
                     <h1 className="text-xl font-bold -mb-1">Input</h1>
                     <p className="text-xs">Input and their variants.</p>
                 </div>
-                <Link className="hidden group-hover:block" href="#input"><Hash className="w-[1.2rem] h-[1.2rem]" /></Link>
+                <Link className="hidden group-hover:block" href="#input"><Hash className="w-[1rem] h-[1rem]" /></Link>
             </div>
-            <div className="relative h-[300px] max-w-2xl mx-auto flex border border-secondary items-center justify-center p-4 w-full bg-background rounded-lg">
-                <div className="flex items-center justify-between w-full absolute top-0 right-0 p-2 px-3 border-b border-secondary">
+            <div className="relative h-[300px] max-w-2xl mx-auto flex border dark:border-secondary border-border items-center justify-center p-4 w-full bg-background rounded-lg">
+                <div className="flex items-center justify-between w-full absolute top-0 right-0 p-2 px-3 border-b dark:border-secondary border-border">
                     <span className="text-xs">Input.jsx</span>
                     <div className="flex gap-2 items-center">
                         <Tooltip content="Live preview">
@@ -102,10 +108,10 @@ export default function Page() {
                     <h1 className="text-xl font-bold -mb-1">Tooltip</h1>
                     <p className="text-xs">Tooltip and their variants.</p>
                 </div>
-                <Link className="hidden group-hover:block" href="#tooltip"><Hash className="w-[1.2rem] h-[1.2rem]" /></Link>
+                <Link className="hidden group-hover:block" href="#tooltip"><Hash className="w-[1rem] h-[1rem]" /></Link>
             </div>
-            <div className="relative h-[300px] max-w-2xl mx-auto flex border border-secondary items-center justify-center p-4 w-full bg-background rounded-lg">
-                <div className="flex items-center justify-between w-full absolute top-0 right-0 p-2 px-3 border-b border-secondary">
+            <div className="relative h-[300px] max-w-2xl mx-auto flex border dark:border-secondary border-border items-center justify-center p-4 w-full bg-background rounded-lg">
+                <div className="flex items-center justify-between w-full absolute top-0 right-0 p-2 px-3 border-b dark:border-secondary border-border">
                     <span className="text-xs">Tooltip.jsx</span>
                     <div className="flex gap-2 items-center">
                         <Tooltip content="Live preview">
@@ -128,10 +134,10 @@ export default function Page() {
                     <h1 className="text-xl font-bold -mb-1">Diaog/Modal</h1>
                     <p className="text-xs">Diaog/Modal and their variants.</p>
                 </div>
-                <Link className="hidden group-hover:block" href="#dialog"><Hash className="w-[1.2rem] h-[1.2rem]" /></Link>
+                <Link className="hidden group-hover:block" href="#dialog"><Hash className="w-[1rem] h-[1rem]" /></Link>
             </div>
-            <div className="relative h-[300px] max-w-2xl mx-auto flex border border-secondary items-center justify-center p-4 w-full bg-background rounded-lg">
-                <div className="flex items-center justify-between w-full absolute top-0 right-0 p-2 px-3 border-b border-secondary">
+            <div className="relative h-[300px] max-w-2xl mx-auto flex border dark:border-secondary border-border items-center justify-center p-4 w-full bg-background rounded-lg">
+                <div className="flex items-center justify-between w-full absolute top-0 right-0 p-2 px-3 border-b dark:border-secondary border-border">
                     <span className="text-xs">Dialog.jsx</span>
                     <div className="flex gap-2 items-center">
                         <Tooltip content="Live preview">
