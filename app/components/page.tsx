@@ -77,7 +77,7 @@ export default function Page() {
                 </div>
             </div>
 
-            <div id="#input" className="group mb-4 flex justify-between items-center mt-10">
+            <div id="input" className="group mb-4 flex justify-between items-center mt-10">
                 <div>
                     <h1 className="text-xl font-bold -mb-1">Input</h1>
                     <p className="text-xs">Input and their variants.</p>
