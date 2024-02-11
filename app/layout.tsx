@@ -9,7 +9,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "MorUI",
-  description: "Fully customizeable, reuseable components for your next project.",
+  description: "Beautifully designed components that you can copy and paste into your apps. Accessible. Customizable. Open Source.",
   icons: ["/logo.png"],
 };
 
