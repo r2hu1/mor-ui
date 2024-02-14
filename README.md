@@ -6,6 +6,8 @@ A reuseable components !library built using [React](https://reactjs.org) and [Ta
 
 ![preview](public/preview-dark.png)
 
+<br/>
+
 ![preview](public/preview-light.png)
 
 ## Contribution
